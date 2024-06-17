@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: hsl(218, 23%, 16%);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  background: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  width: 30%;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.advice-title {
+  color: hsl(193, 38%, 86%);
+  font-size: 2rem;
+  width: 90%;
+  text-align: center;
+}
+#id {
+  color: hsl(150, 100%, 66%);
+  font-size: small;
+  letter-spacing: 0.15rem;
+}
+
+.action-keys {
+  background-image: url("./images/pattern-divider-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 40px;
+}
+
+.dice {
+  position: absolute;
+  bottom: -2.1rem;
+  z-index: 10;
+  background: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dice:hover {
+  box-shadow: 0 0 30px 0 hsl(150, 100%, 66%);
+}
+
+.dice img {
+  width: 40%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+
+  .action-keys {
+    background-image: url("./images/pattern-divider-mobile.svg");
+  }
+}
