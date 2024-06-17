@@ -9,4 +9,10 @@ const randomAdvice = async () => {
   id.innerHTML = `ADVICE #${slip.id}`;
 };
 
+const dice = document.querySelector(".dice");
+
+dice.addEventListener("click", () => {
+  randomAdvice();
+});
+
 window.onload = randomAdvice();
